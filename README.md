@@ -148,12 +148,8 @@ This project is licensed under the [MIT License](LICENSE).
 ### Screenshots
 
 #### Home Page
-![Home Page Screenshot](@/public/screenshots/home-page.png)
+![Home Page Screenshot](public/screenshots/home-page.png)
 
 #### Search Results
-![Search Results Screenshot](@/public/screenshots/search-results.png)
+![Search Results Screenshot](public/screenshots/search-results.png)
 ``` 
-
-<!-- **Suggestions:**
-**a.** Add screenshots and a demo link to enhance the README.  
-**b.** Add detailed API endpoint documentation in the README. -->
