@@ -2,8 +2,8 @@
 
 import { useState, useEffect } from 'react'
 import { Bike } from '../types/bike'
-import AdminBikeForm from '../components/AdminBikeForm'
-import AdminBikeList from '../components/AdminBikeList'
+import AdminBikeForm from '@/components/AdminBikeForm'
+import AdminBikeList from '@/components/AdminBikeList'
 
 export default function AdminPage() {
   const [bikes, setBikes] = useState<Bike[]>([])

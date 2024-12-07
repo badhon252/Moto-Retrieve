@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from 'react'
 import BikeDetails from './BikeDetails'
-import { Bike } from '../types/bike'
+import { Bike } from '@/app/types/bike'
 import { Search, AlertCircle } from 'lucide-react'
 
 export function SearchResults({ query }: { query: string }) {
@@ -22,6 +22,7 @@ export function SearchResults({ query }: { query: string }) {
         }
         const data = await response.json()
         setResults(data.results)
+      // eslint-disable-next-line @typescript-eslint/no-unused-vars
       } catch (err) {
         setError('An error occurred while fetching results. Please try again.')
       } finally {
@@ -53,14 +54,14 @@ export function SearchResults({ query }: { query: string }) {
     return (
       <div className="text-center p-4 bg-yellow-100 rounded-lg flex items-center justify-center" aria-live="polite">
         <Search className="mr-2" />
-        No results found for "{query}"
+        No results found for &quot;{query}&quot;
       </div>
     )
   }
 
   return (
     <div>
-      <h2 className="text-2xl font-semibold mb-6">Results for "{query}"</h2>
+      <h2 className="text-2xl font-semibold mb-6">Results for &quot;{query}&quot;</h2>
       <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
         {results.map((bike) => (
           <BikeDetails key={bike.id} bike={bike} />

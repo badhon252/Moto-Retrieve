@@ -1,4 +1,4 @@
-import { Bike } from '../types/bike'
+import { Bike } from '@/app/types/bike'
 
 interface AdminBikeListProps {
   bikes: Bike[]

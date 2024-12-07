@@ -2,7 +2,7 @@ import { NextResponse } from 'next/server'
 import { Bike } from '../../../../types/bike'
 
 // This is a mock database. In a real application, you would use a proper database.
-let bikes: Bike[] = [
+const bikes: Bike[] = [
   {
     id: '1',
     make: 'Honda',

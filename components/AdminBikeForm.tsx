@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react'
-import { Bike } from '../types/bike'
+import { Bike } from '@/app/types/bike'
 
 interface AdminBikeFormProps {
   bike?: Bike | null

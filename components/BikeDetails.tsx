@@ -1,4 +1,4 @@
-import { Bike } from '../types/bike'
+import { Bike } from '@/app/types/bike'
 import { MapPin, Calendar, Hash } from 'lucide-react'
 
 export default function BikeDetails({ bike }: { bike: Bike }) {

@@ -2,7 +2,7 @@ import { NextResponse } from 'next/server'
 import { v4 as uuidv4 } from 'uuid'
 import { Bike } from '../../../types/bike'
 
-let bikes: Bike[] = [
+const bikes: Bike[] = [
   {
     id: '1',
     make: 'Honda',
