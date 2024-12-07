@@ -29,11 +29,13 @@ Moto Retrieve is a web application designed to help users search for lost bikes 
 ## Tech Stack
 
 ### Frontend
+
 - **Framework**: [Next.js](https://nextjs.org/)
 - **Language**: [TypeScript](https://www.typescriptlang.org/)
 - **Styling**: [TailwindCSS](https://tailwindcss.com/)
 
 ### Backend
+
 - **Framework**: [Laravel](https://laravel.com/) (mocked for this prototype)
 - **API**: Fake JSON endpoints via `fetch` or `axios`
 
@@ -42,51 +44,64 @@ Moto Retrieve is a web application designed to help users search for lost bikes 
 ## Setup and Installation
 
 ### Prerequisites
+
 - Node.js >= 16.x
 - npm >= 8.x / yarn >= 1.x
 - PHP >= 8.x (if using Laravel backend locally)
 
 ### Clone the Repository
+
 ```bash
 git clone https://github.com/<your-username>/moto-retrieve.git
 cd moto-retrieve
 ```
 
 ### Install Dependencies
+
 #### Frontend
+
 ```bash
 cd frontend
 npm install
 ```
 
 #### Backend
+
 If using Laravel locally:
+
 ```bash
 cd backend
 composer install
 ```
 
 ### Environment Variables
+
 Create a `.env.local` file in the `frontend` directory with the following:
+
 ```env
 NEXT_PUBLIC_API_URL=http://localhost:8000/api # Adjust as needed
 ```
 
 If using Laravel:
+
 1. Copy the `.env.example` file in the `backend` directory to `.env`.
 2. Configure database and app keys:
+
    ```bash
    php artisan key:generate
    ```
 
 ### Run the Application
+
 #### Frontend
+
 ```bash
 cd frontend
 npm run dev
 ```
 
 #### Backend (optional)
+
 ```bash
 cd backend
 php artisan serve
@@ -119,11 +134,13 @@ moto-retrieve/
 ## Usage
 
 ### Search for Bike Details
+
 1. Navigate to the homepage.
 2. Enter an engine or chassis number into the search bar.
 3. View search results or error messages.
 
 ### Simulating API Responses
+
 Modify mock data in the `frontend/utils/mockData.json` file.
 
 ---
@@ -131,6 +148,7 @@ Modify mock data in the `frontend/utils/mockData.json` file.
 ## Contributing
 
 We welcome contributions! Follow these steps:
+
 1. Fork the repository.
 2. Create a new feature branch: `git checkout -b feature/your-feature-name`.
 3. Commit your changes: `git commit -m "Add your feature"`.
@@ -148,8 +166,9 @@ This project is licensed under the [MIT License](LICENSE).
 ### Screenshots
 
 #### Home Page
+
 ![Home Page Screenshot](public/screenshots/home-page.png)
 
 #### Search Results
+
 ![Search Results Screenshot](public/screenshots/search-results.png)
-``` 
