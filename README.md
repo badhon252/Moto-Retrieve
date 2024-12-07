@@ -100,12 +100,14 @@ cd frontend
 npm run dev
 ```
 
-#### Backend (optional)
+### To test the search functionality, you can use any of the following sample queries
 
-```bash
-cd backend
-php artisan serve
-```
+1. Engine/Chassis numbers: MH43DE6789, WMWZC5C50FWM47293, KTM690SM5678, HD96385VRSCDX, JH2PC35071M200203
+2. Bike makes: Honda, Yamaha, KTM, Harley-Davidson
+3. Bike models: CBR600RR, YZF-R1, 690 Supermoto, V-Rod, VFR800
+
+
+These queries should now return results when searched. If you encounter any issues or need further modifications, please let me know.
 
 Access the frontend at `http://localhost:3000`.
 
